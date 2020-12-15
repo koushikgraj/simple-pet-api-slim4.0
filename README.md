@@ -34,13 +34,19 @@ All output will be in JSON format. Same data can be shared between multiple plat
 
 ### List all pets
 **URL:** http://127.0.0.1:3000/pet-list
+<br>
 **Methiod:** GET
+
 
 ### Get pet details
 ID parameter in the URL is different for different pets.
+<br>
 **Sample URL:** http://127.0.0.1:3000/pet-details/20758
+<br>
 **Methiod:** GET
+<br>
 **Sample Output:**
+<br>
 ```json
 {
   "pet_id": 20758,
@@ -64,9 +70,13 @@ ID parameter in the URL is different for different pets.
 
 ### Filter & Sort pets
 Input parameter should be in HTTP post body(raw) type
+<br>
 **URL:** http://127.0.0.1:3000/pet-list
+<br>
 **Methiod:** POST
+<br>
 **Sample Input:**
+<br>
 ```json
 {
   "sort":"age ASC",
